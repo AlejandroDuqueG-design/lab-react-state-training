@@ -8,14 +8,14 @@ import dice5 from "../assets/images/dice5.png"
 import dice6 from "../assets/images/dice6.png"
 
 function Dice() {
-const diceImages[diceEmpty, dice1, dice2, dice3, dice4, dice5, dice6];
-const [randomDiceValue, setRandomDiceValue]=useState(diceEmpty)
+const diceImages = [diceEmpty, dice1, dice2, dice3, dice4, dice5, dice6];
+const [dice, setDice]=useState(dice3)
 
 const handleDisplay = ()=>{
-    setRandomDiceValue(diceEmpty);
+    setDice(diceEmpty);
     setTimeout(()=>{
         const randomDice = Math.floor(Math.random()*6)
-        setRandomDiceValue(diceImages[lrandomIndex]);
+        setDice(diceImages[randomDice]);
     },1000)
 }
 
