@@ -1,3 +1,4 @@
+import { useState } from "react"
 import diceEmpty from "../assets/images/dice-empty.png"
 import diceOne from "../assets/images/dice1.png"
 import diceTwo from "../assets/images/dice2.png"
@@ -19,7 +20,7 @@ const handleDisplay = ()=>{
 
   return (
     <div>
-<button onClick={rollDice}>Roll Dice</button>
+<button onClick={randomDice}>Roll Dice</button>
 
 
     </div>
