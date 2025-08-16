@@ -18,8 +18,11 @@ padding: 10px;
 
 .counter-container{
   border: solid 1px
-  
+}
 
+.images-dice {
+  text-align: center;
+  width: 80px;
 }
 
 

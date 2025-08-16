@@ -9,7 +9,7 @@ import dice6 from "../assets/images/dice6.png"
 
 function Dice() {
 const diceImages = [diceEmpty, dice1, dice2, dice3, dice4, dice5, dice6];
-const [dice, setDice]=useState(dice3)
+const [dice, setDice]=useState(diceEmpty)
 
 const handleDisplay = ()=>{
     setDice(diceEmpty);
@@ -22,7 +22,7 @@ const handleDisplay = ()=>{
   return (
     <div>
 <button onClick={handleDisplay}>Roll Dice</button>
-<img src={randomDice}></img>
+<div> <img src={dice}></img></div>
 
     </div>
   )
